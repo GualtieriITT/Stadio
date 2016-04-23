@@ -1,0 +1,39 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Vendita biglietti" Height="442.45" Width="677">
+    <Grid>
+        <TabControl HorizontalAlignment="Left" Height="411" VerticalAlignment="Top" Width="669">
+            <TabItem Header="VENDITA BIGLIETTO">
+                <Grid Background="#FFE5E5E5">
+                    <Label Content="Seleziona tipo partita" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="130"/>
+                    <ComboBox x:Name="cmbTipoPartita" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="183"/>
+                    <Label Content="Seleziona settore" HorizontalAlignment="Left" Margin="294,10,0,0" VerticalAlignment="Top" Width="110"/>
+                    <ComboBox x:Name="cmbSettore" HorizontalAlignment="Left" Margin="216,41,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cmbSettore_SelectionChanged"/>
+                    <ComboBox x:Name="cmbSpecifica" HorizontalAlignment="Left" Margin="341,41,0,0" VerticalAlignment="Top" Width="125"/>
+                    <ComboBox x:Name="cmbFila" HorizontalAlignment="Left" Margin="471,41,0,0" VerticalAlignment="Top" Width="42"/>
+                    <Label Content="Fila" HorizontalAlignment="Left" Margin="471,15,0,0" VerticalAlignment="Top"/>
+                    <ComboBox x:Name="cmbPosto" HorizontalAlignment="Left" Margin="518,41,0,0" VerticalAlignment="Top" Width="56"/>
+                    <Label Content="Posto" HorizontalAlignment="Left" Margin="518,15,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Nome" HorizontalAlignment="Left" Margin="47,195,0,0" VerticalAlignment="Top"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="10,226,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="135,226,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label Content="Cognome" HorizontalAlignment="Left" Margin="160,195,0,0" VerticalAlignment="Top"/>
+                    <ComboBox x:Name="cmbGiorno" HorizontalAlignment="Left" Margin="260,227,0,0" VerticalAlignment="Top" Width="42"/>
+                    <Label Content="Data  di nascita" HorizontalAlignment="Left" Margin="274,177,0,0" VerticalAlignment="Top" Width="153"/>
+                    <Label Content="GG" HorizontalAlignment="Left" Margin="260,203,0,0" VerticalAlignment="Top"/>
+                    <ComboBox x:Name="cmbMese" HorizontalAlignment="Left" Margin="307,227,0,0" VerticalAlignment="Top" Width="45"/>
+                    <ComboBox x:Name="cmbAnno" HorizontalAlignment="Left" Margin="359,227,0,0" VerticalAlignment="Top" Width="68"/>
+                    <Label Content="MM" HorizontalAlignment="Left" Margin="307,203,0,0" VerticalAlignment="Top"/>
+                    <Label Content="AA" HorizontalAlignment="Left" Margin="366,203,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.105,0.308"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="193,139,0,0" TextWrapping="Wrap" Text="Raccolta dati" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+                    <Button Content="COMPRA" HorizontalAlignment="Left" Margin="498,222,0,0" VerticalAlignment="Top" Width="136" Height="45"/>
+                    <Button Content="STAMPA" HorizontalAlignment="Left" Margin="498,277,0,0" VerticalAlignment="Top" Width="136" Height="45"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="VENDITA ABBONAMENTO">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

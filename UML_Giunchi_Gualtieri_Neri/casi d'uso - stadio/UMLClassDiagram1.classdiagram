@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="621c26f7-9dff-41c1-b844-37bb0428eb1a" name="UMLClassDiagram1" linkedPackageId="a787ba36-f5c9-4296-a872-87169d6cd256" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="054a8da0-9444-4278-9f9a-a699ea69670f" name="Abbonamento" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9636f981-b0e9-4438-880f-65dd30a9bced" />
+        <ownedAttributesInternal>
+          <property Id="1ddf1889-793b-4d49-941c-f7a92820c523" name="Tipologia" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b0bdda7b-a794-4919-9a93-230b93085435" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="7d918c78-6452-42fd-ba36-2cbeaf9bcbb5" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="9cc0fc8f-affa-462d-8a89-417abdf63052" name="dataScadenza" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0c801bf3-d27b-46b6-8116-cfc3149395b3" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2d2b880f-b5ee-450a-84f1-6e8ef4e73420" LastKnownName="DateTime" />
+            </type_NamedElement>
+          </property>
+          <property Id="9b15f31c-c501-4eb9-b399-a17258ecdff3" name="IDAbbonamento" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0d3d3dca-0f67-419a-8dc7-c65cd6c769f2" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="286d8f74-f5af-4909-871d-60bc7e8dadf2" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+          <property Id="673e48f9-ba52-4880-8f59-cbfeba6193ac" name="Costo" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="118fca5d-aa78-46cd-81dd-f31462e1d035" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="1ddcfd52-2a46-4b12-a718-0f77a29bb854" LastKnownName="double" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="a217cf65-aaec-4899-96ae-3c3398e83a6c" name="void Rinnovo" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4c6059d2-7394-49dd-a68d-34a0c10f68db" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a1c46a8c-58b0-4a07-a13e-c26efc015b4f" name="DateTime nuovaScadenza" direction="In" isUnique="false">
+                  <elementDefinition Id="27ca6baa-b3d3-43e9-a810-d67ca7989e56" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a16ca618-e606-48f1-bda4-c8fcea535db5" name="Spettatore" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="da646822-3251-46c4-b371-961c24ac1a77" />
+        <targetEnds>
+          <association Id="98d46a87-ce9b-4399-9dab-170770036207" isDerived="false" sourceEndRoleName="Spettatore" targetEndRoleName="Abbonamento" isLeaf="false" isAbstract="false">
+            <classMoniker Id="054a8da0-9444-4278-9f9a-a699ea69670f" LastKnownName="Abbonamento" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="27d59003-c8c8-4c65-aa1c-f4e1cd5c65c6" name="Spettatore" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d859e525-590f-48ff-87c8-659367f8ece4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bfa12509-d27f-4bd5-95c7-154e3ec24618" name="Abbonamento" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b6e43cc2-005f-4943-b49b-332def719bd1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="01108c3d-ce08-4a7c-9667-28b51849aaa5" />
+          </association>
+          <association Id="3a75d8eb-80b5-4569-84fc-bcb804cb5af0" isDerived="false" sourceEndRoleName="Spettatore" targetEndRoleName="Biglietto" isLeaf="false" isAbstract="false">
+            <classMoniker Id="5133a064-b479-4d5a-90cf-2409a242fd0c" LastKnownName="Biglietto" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9cb4b5c3-1b6c-4132-8e2a-4d4da8f2a44e" name="Spettatore" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="66bdcac6-bab4-418a-abe1-e8039515560b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fec0974a-efef-4d46-aff9-c1201e4b18cd" name="Biglietto" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="978d1750-4f22-44c2-9e36-8e592747120c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="95587e0b-19f1-49c6-af6f-89f2e4b0f39c" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="2db9596f-8377-4f0e-9303-5a7d3f4310e9" name="nome" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="84528802-0050-4272-bd8c-02f8f46d428c" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="286d8f74-f5af-4909-871d-60bc7e8dadf2" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+          <property Id="f3c99216-2c04-46ca-91e7-4b22423e901f" name="abbonato/no" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="31b669fa-0f10-4c45-ab0b-9f5e4d0709e5" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="a64cafe7-8a63-49a5-bf19-ccaef719fe95" LastKnownName="bool" />
+            </type_NamedElement>
+          </property>
+          <property Id="cfb3b7c1-07d8-40fd-bc68-a81ceb391e9c" name="cognome" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1af84df1-c970-48fd-b205-ab4d017e6854" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="286d8f74-f5af-4909-871d-60bc7e8dadf2" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+          <property Id="c3beed62-7da7-4e50-b9a1-80d7952111a0" name="codFiscale" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="95c0d180-964b-4fec-b531-e11c76c7be8b" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="286d8f74-f5af-4909-871d-60bc7e8dadf2" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0aca0967-21a5-4073-b68c-a00183749f74" name="Posto" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a898ecf4-6261-4832-a100-a9e46753324c" />
+        <targetEnds>
+          <association Id="7ec97b3b-67c8-4450-a65c-fd4b2df7993d" isDerived="false" sourceEndRoleName="Posto" targetEndRoleName="Abbonamento" isLeaf="false" isAbstract="false">
+            <classMoniker Id="054a8da0-9444-4278-9f9a-a699ea69670f" LastKnownName="Abbonamento" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1c7251b2-fd43-42b0-9f39-082938446fb4" name="Posto" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="91ab9180-196e-46cc-9667-2f67194b8db4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="dbf58f10-6558-4cb8-be6d-008bffd2c0fd" name="Abbonamento" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5caa3b93-48c2-4979-9aca-c8757c762f84" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="bb8dc086-97a5-4bbf-b3b6-97d36aa75267" />
+          </association>
+          <association Id="35933834-caf4-4f81-ad5a-dfb936f0706b" isDerived="false" sourceEndRoleName="Posto" targetEndRoleName="Biglietto" isLeaf="false" isAbstract="false">
+            <classMoniker Id="5133a064-b479-4d5a-90cf-2409a242fd0c" LastKnownName="Biglietto" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2639a1e7-050d-4536-a095-b73f79d7c7da" name="Posto" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="dcdf5b14-08ae-4da3-a47e-7ac860175483" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e349c5cc-70b0-4f68-886d-5f8487a1f6da" name="Biglietto" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b9448f2d-36cd-4f0e-aca6-9babb619f664" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="557a2221-dc29-420a-a34e-42837b1f0f30" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="0180a6ab-285d-4a9f-b9f9-b2173ffd4cc0" name="settore" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="676b52bb-5cb1-44ac-abe1-76e4e03ae8d9" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="286d8f74-f5af-4909-871d-60bc7e8dadf2" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+          <property Id="57f45e6a-e8bb-430d-aad0-07b9ebfab587" name="fila" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c9e2caa9-1863-407f-a925-330af52cdb39" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="89ee95df-2679-4e5d-931f-507d11ee3de3" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="344fcfd9-b542-4029-bf26-2ae16852eef9" name="posto" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8a6f721a-f0cd-42eb-8055-68e16214f9f0" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="89ee95df-2679-4e5d-931f-507d11ee3de3" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="ab50560c-89f0-433d-bce7-427f2de3c2df" name="libero/occupato" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d635f5b1-0d44-46b1-b2e2-c96b8ddfe2c1" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="a64cafe7-8a63-49a5-bf19-ccaef719fe95" LastKnownName="bool" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="050d743d-5162-4ae3-8126-0f7d1391878c" name="void CambiaStato" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3b1aea83-40c2-40b8-9591-0da4baf26e6a" />
+          </operation>
+          <operation Id="dc929944-af09-4e75-a602-6c7da342367d" name="void" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="03932d49-178b-431a-966a-a1dae274d5c0" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="7d918c78-6452-42fd-ba36-2cbeaf9bcbb5" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="2d2b880f-b5ee-450a-84f1-6e8ef4e73420" name="DateTime" isAbstract="false" isLeaf="false" cachedFullName="DateTime">
+        <elementDefinition Id="a2bcdcd7-cd77-4ef7-a71b-de0360eda022" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="286d8f74-f5af-4909-871d-60bc7e8dadf2" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
+        <elementDefinition Id="783f4c43-99f5-47ea-9fbd-072826494de1" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="a64cafe7-8a63-49a5-bf19-ccaef719fe95" name="bool" isAbstract="false" isLeaf="false" cachedFullName="bool">
+        <elementDefinition Id="0be8dac7-55ea-4edd-8dcd-3c87fe7933e4" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="89ee95df-2679-4e5d-931f-507d11ee3de3" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="42a557bc-5734-4ab9-9cdf-ec896c9ff57d" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5133a064-b479-4d5a-90cf-2409a242fd0c" name="Biglietto" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="480d9f18-2936-406d-b270-40519434899d" />
+        <ownedAttributesInternal>
+          <property Id="17c2fe3c-4547-4c58-bd40-e176d0cd7a98" name="Costo" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5861e0d8-6ad6-43c3-b831-65a79b3e8302" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="1ddcfd52-2a46-4b12-a718-0f77a29bb854" LastKnownName="double" />
+            </type_NamedElement>
+          </property>
+          <property Id="2435e57e-1a59-49bb-9aff-43f28acf8a0b" name="data" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="db6f6be4-495c-4ed9-a9cd-e9e9f552a3b6" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2d2b880f-b5ee-450a-84f1-6e8ef4e73420" LastKnownName="DateTime" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="1ddcfd52-2a46-4b12-a718-0f77a29bb854" name="double" isAbstract="false" isLeaf="false" cachedFullName="double">
+        <elementDefinition Id="a5f0c03a-b868-43d0-ae9a-85552517bd9d" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="a787ba36-f5c9-4296-a872-87169d6cd256" name="casi d'uso - stadio">
+    <elementDefinition Id="981a02cb-35e9-4a73-ad26-cd690f406e53" />
+    <profileInstances>
+      <packageHasProfileInstances Id="6daa3e21-48c7-4440-b9cd-cb5d17366578">
+        <profileInstance Id="067af422-d0e1-475e-ba44-07383a66f349" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="c058f9e8-32ea-448b-9693-e5136a7ea85f">
+        <profileInstance Id="0b9c3033-ea13-44e1-8c5a-e71a5e9833a4" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

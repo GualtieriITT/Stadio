@@ -1,0 +1,1802 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="981a02cb-35e9-4a73-ad26-cd690f406e53"
+  name="casi d'uso - stadio" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="4abcac51-1b78-4e61-9a83-f98b6e8cf271">
+      <body>Anche quando si vende un abbonamento si richiede la raccolta dati e il pagamento.</body>
+    </comment>
+    <comment
+      Id="c245f240-9a29-4e90-add3-fc980bef9d16">
+      <body>Tipologia di partita</body>
+    </comment>
+    <comment
+      Id="a08bfe85-632b-48ea-8a8a-1d2d2aaa6d39">
+      <body>Tipologia di posto</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="2d446f90-b564-4ba6-a5f1-556a8dcdeb59"
+        name="Venditore"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="bcbc76f8-e962-4e36-9e0e-b2e804fa3278"
+            isDerived="false"
+            sourceEndRoleName="Venditore"
+            targetEndRoleName="Vendere un abbonamento"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="12220941-421c-4620-bc2a-e4fd90367124"
+              LastKnownName="Vendere un abbonamento"
+              LastKnownLocation="casi d'uso - stadio.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5592fd7b-6293-4b90-b6e7-78fc388c6743"
+                  name="Venditore"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="08ff9f86-ab2a-4ebb-9e9a-60b1cb9c0f59"
+                  name="Vendere un abbonamento"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="59628f5b-3eff-49a2-81c6-8733a4c13e68"
+            isDerived="false"
+            sourceEndRoleName="Venditore"
+            targetEndRoleName="Far entrare un abbonato"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6b834188-442c-496c-adb9-4bbccdf0b677"
+              LastKnownName="Far entrare un abbonato"
+              LastKnownLocation="casi d'uso - stadio.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e8858756-6844-4803-a3f8-8baaa1a6c546"
+                  name="Venditore"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6c0b52ce-7ef0-4849-aae5-8a008e87d036"
+                  name="Far entrare un abbonato"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="12220941-421c-4620-bc2a-e4fd90367124"
+        name="Vendere un abbonamento"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="51379aa8-6a5e-40cd-ae0b-9489d08d03b2"
+        name="Scegliere il tipo di partita"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="e7376cd2-d681-4858-9a87-ae7ae8337523">
+            <useCaseMoniker
+              Id="f1362f6f-1c17-4860-bd4c-7ab80f609b95"
+              LastKnownName="Vendi biglietto"
+              LastKnownLocation="casi d'uso - stadio.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6b834188-442c-496c-adb9-4bbccdf0b677"
+        name="Far entrare un abbonato"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7c17e455-8a5b-4fd1-89e7-024a4c9fcd2a"
+        name="Normale di campionato"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="d8d385a4-a80a-4ba9-b786-e9cbb010fa51"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="7c17e455-8a5b-4fd1-89e7-024a4c9fcd2a"
+              LastKnownName="Normale di campionato"
+              LastKnownLocation="casi d'uso - stadio.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a6a489ce-28a2-4d02-ba3c-0105afe38123"
+        name="Finale di Europa League"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="6e3f98a6-a85c-4fab-85ac-0c6519b558f1"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="51379aa8-6a5e-40cd-ae0b-9489d08d03b2"
+              LastKnownName="Scegliere il tipo di partita"
+              LastKnownLocation="casi d'uso - stadio.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ec276239-4157-453a-b155-a7572753b4c6"
+        name="Normale di Europa League"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="e1d6ba49-0ac4-4755-9379-6ae1990a03f2"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="51379aa8-6a5e-40cd-ae0b-9489d08d03b2"
+              LastKnownName="Scegliere il tipo di partita"
+              LastKnownLocation="casi d'uso - stadio.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2ef32da7-e3b7-4b7f-9c13-9baa502e6a4d"
+        name="Normale di Champions"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="32a12e0b-a6a3-4c6a-a60b-7fa42844fe87"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="51379aa8-6a5e-40cd-ae0b-9489d08d03b2"
+              LastKnownName="Scegliere il tipo di partita"
+              LastKnownLocation="casi d'uso - stadio.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7135ac2c-1a32-48a8-95c0-9ec9ff8c2d70"
+        name="Finale di Champions"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="7e61f689-4989-4cd4-8373-ffee6198215d"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="51379aa8-6a5e-40cd-ae0b-9489d08d03b2"
+              LastKnownName="Scegliere il tipo di partita"
+              LastKnownLocation="casi d'uso - stadio.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="50bca903-1182-4690-abe9-9a7536ec0c6a"
+        name="Campionato"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="1b0c2d19-2120-449a-96ed-984bdc3c70aa"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="51379aa8-6a5e-40cd-ae0b-9489d08d03b2"
+              LastKnownName="Scegliere il tipo di partita"
+              LastKnownLocation="casi d'uso - stadio.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="60a9d0ff-ee49-47df-89c2-f98a5f7bba21"
+        name="Selezionare il posto"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="0e2832bb-8709-41aa-95c5-3c5351ee3889">
+            <useCaseMoniker
+              Id="12220941-421c-4620-bc2a-e4fd90367124"
+              LastKnownName="Vendere un abbonamento"
+              LastKnownLocation="casi d'uso - stadio.uml" />
+          </include>
+          <include
+            Id="c6a8b162-7294-4fc0-a457-2a3acf006e52">
+            <useCaseMoniker
+              Id="51379aa8-6a5e-40cd-ae0b-9489d08d03b2"
+              LastKnownName="Scegliere il tipo di partita"
+              LastKnownLocation="casi d'uso - stadio.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="57af90c9-85d6-4bb6-9607-2243952a348e"
+        name="Curva"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="e9c4ff15-9e16-468e-975d-9202f517aae9"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="60a9d0ff-ee49-47df-89c2-f98a5f7bba21"
+              LastKnownName="Selezionare il posto"
+              LastKnownLocation="casi d'uso - stadio.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8e61146e-2157-4108-8eae-43c42d716516"
+        name="Tribuna"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="c694bfd6-ae05-4676-8c34-dc357393c0b7"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="60a9d0ff-ee49-47df-89c2-f98a5f7bba21"
+              LastKnownName="Selezionare il posto"
+              LastKnownLocation="casi d'uso - stadio.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0ed36696-cb8d-4157-99ae-ec1a6bc2cb17"
+        name="Distinti"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="ce7982fe-8282-4659-b5fe-48f030d503fe"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="60a9d0ff-ee49-47df-89c2-f98a5f7bba21"
+              LastKnownName="Selezionare il posto"
+              LastKnownLocation="casi d'uso - stadio.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0d74afdc-8c38-4636-af91-1ceb9a4c0108"
+        name="Vip"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="7f44f6bb-8993-45f1-8a8d-66020a7cfdb4"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="8e61146e-2157-4108-8eae-43c42d716516"
+              LastKnownName="Tribuna"
+              LastKnownLocation="casi d'uso - stadio.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2b34a463-a9f4-48d0-9fca-b9854b39cf29"
+        name="Normale"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="40d54b8e-0e9e-45f2-85b7-6d107e436a58"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="8e61146e-2157-4108-8eae-43c42d716516"
+              LastKnownName="Tribuna"
+              LastKnownLocation="casi d'uso - stadio.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="501b6503-9265-4314-a653-ed0e7b6e64bd"
+        name="Ospiti"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="6f6702a5-543f-4a6a-bc1e-068fac19f157"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="57af90c9-85d6-4bb6-9607-2243952a348e"
+              LastKnownName="Curva"
+              LastKnownLocation="casi d'uso - stadio.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="aa9300cc-21c4-4f06-9725-abdabd71d60b"
+        name="Locali"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="a944284f-e54e-4657-bf37-1d9641219bd6"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="57af90c9-85d6-4bb6-9607-2243952a348e"
+              LastKnownName="Curva"
+              LastKnownLocation="casi d'uso - stadio.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5c053339-5360-47a5-aec6-aa0b47b1f488"
+        name="Centrale superiore"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="b1c859a9-4ba0-4a0a-b0df-ea891a43d440"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="0ed36696-cb8d-4157-99ae-ec1a6bc2cb17"
+              LastKnownName="Distinti"
+              LastKnownLocation="casi d'uso - stadio.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4484d7bf-a26f-4f61-a862-1340c7fc5bb4"
+        name="Laterale inferiore"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="379f2600-d892-4fe4-bd49-bfaac8e7cc3f"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="0ed36696-cb8d-4157-99ae-ec1a6bc2cb17"
+              LastKnownName="Distinti"
+              LastKnownLocation="casi d'uso - stadio.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="712d9fa9-f14b-4618-8a2c-cfd6243e12a0"
+        name="Sotto"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="21bd9258-e9a9-458d-bfcd-bf6fbb804450"
+        name="Sopra"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0ed12356-5021-479d-9dcd-887b00c685e4"
+        name="Sopra"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2b9ebf46-dc19-429d-8c5d-c0f37dc0ab32"
+        name="Sotto2"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5f57f267-5c5b-4232-baaa-08538e6bcfd3"
+        name="Laterale superiore"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="25bd388d-32d7-477a-a9c7-6e483afaafaf"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="0ed36696-cb8d-4157-99ae-ec1a6bc2cb17"
+              LastKnownName="Distinti"
+              LastKnownLocation="casi d'uso - stadio.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="72761cf2-b067-4d94-b054-b535d7a5064c"
+        name="Centrale inferiore"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="58e44dc1-ed95-4fe5-ac70-b1d78b07440d"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="0ed36696-cb8d-4157-99ae-ec1a6bc2cb17"
+              LastKnownName="Distinti"
+              LastKnownLocation="casi d'uso - stadio.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f1362f6f-1c17-4860-bd4c-7ab80f609b95"
+        name="Vendi biglietto"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="5f7e965e-fadc-4a3b-9ca7-dba459515a21"
+            isDerived="false"
+            sourceEndRoleName="Vendi biglietto"
+            targetEndRoleName="Venditore"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="2d446f90-b564-4ba6-a5f1-556a8dcdeb59"
+              LastKnownName="Venditore"
+              LastKnownLocation="casi d'uso - stadio.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="36e6d150-df7a-4c10-b4dc-3348c79ff0a3"
+                  name="Vendi biglietto"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3880c7df-0d4f-4fbb-a38f-2c5907a5b8e5"
+                  name="Venditore"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3d7b4031-7de7-4d3e-bc87-e9aeec2e916c"
+        name="Raccolta dati"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="fefa575d-b1e2-4c83-8636-6e7a9c02bb3c">
+            <useCaseMoniker
+              Id="51379aa8-6a5e-40cd-ae0b-9489d08d03b2"
+              LastKnownName="Scegliere il tipo di partita"
+              LastKnownLocation="casi d'uso - stadio.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="12ecb642-33b4-4973-9422-add9338fe48d"
+        name="Pagamento"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="6a928db0-6c75-4a26-a54a-b1a61e25f4bf">
+            <useCaseMoniker
+              Id="51379aa8-6a5e-40cd-ae0b-9489d08d03b2"
+              LastKnownName="Scegliere il tipo di partita"
+              LastKnownLocation="casi d'uso - stadio.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9636f981-b0e9-4438-880f-65dd30a9bced"
+        name="Abbonamento"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="b0bdda7b-a794-4919-9a93-230b93085435"
+            name="Tipologia"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="0c801bf3-d27b-46b6-8116-cfc3149395b3"
+            name="dataScadenza"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a2bcdcd7-cd77-4ef7-a71b-de0360eda022"
+                LastKnownName="DateTime"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="0d3d3dca-0f67-419a-8dc7-c65cd6c769f2"
+            name="IDAbbonamento"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="783f4c43-99f5-47ea-9fbd-072826494de1"
+                LastKnownName="string"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="118fca5d-aa78-46cd-81dd-f31462e1d035"
+            name="Costo"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a5f0c03a-b868-43d0-ae9a-85552517bd9d"
+                LastKnownName="double"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="4c6059d2-7394-49dd-a68d-34a0c10f68db"
+            name="void Rinnovo"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="27ca6baa-b3d3-43e9-a810-d67ca7989e56"
+                  name="DateTime nuovaScadenza"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="da646822-3251-46c4-b371-961c24ac1a77"
+        name="Spettatore"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="01108c3d-ce08-4a7c-9667-28b51849aaa5"
+            isDerived="false"
+            sourceEndRoleName="Spettatore"
+            targetEndRoleName="Abbonamento"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="9636f981-b0e9-4438-880f-65dd30a9bced"
+              LastKnownName="Abbonamento"
+              LastKnownLocation="casi d'uso - stadio.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d859e525-590f-48ff-87c8-659367f8ece4"
+                  name="Spettatore"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b6e43cc2-005f-4943-b49b-332def719bd1"
+                  name="Abbonamento"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="95587e0b-19f1-49c6-af6f-89f2e4b0f39c"
+            isDerived="false"
+            sourceEndRoleName="Spettatore"
+            targetEndRoleName="Biglietto"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="480d9f18-2936-406d-b270-40519434899d"
+              LastKnownName="Biglietto"
+              LastKnownLocation="casi d'uso - stadio.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="66bdcac6-bab4-418a-abe1-e8039515560b"
+                  name="Spettatore"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="978d1750-4f22-44c2-9e36-8e592747120c"
+                  name="Biglietto"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="84528802-0050-4272-bd8c-02f8f46d428c"
+            name="nome"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="783f4c43-99f5-47ea-9fbd-072826494de1"
+                LastKnownName="string"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="31b669fa-0f10-4c45-ab0b-9f5e4d0709e5"
+            name="abbonato/no"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="0be8dac7-55ea-4edd-8dcd-3c87fe7933e4"
+                LastKnownName="bool"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="1af84df1-c970-48fd-b205-ab4d017e6854"
+            name="cognome"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="783f4c43-99f5-47ea-9fbd-072826494de1"
+                LastKnownName="string"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="95c0d180-964b-4fec-b531-e11c76c7be8b"
+            name="codFiscale"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="783f4c43-99f5-47ea-9fbd-072826494de1"
+                LastKnownName="string"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a898ecf4-6261-4832-a100-a9e46753324c"
+        name="Posto"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="bb8dc086-97a5-4bbf-b3b6-97d36aa75267"
+            isDerived="false"
+            sourceEndRoleName="Posto"
+            targetEndRoleName="Abbonamento"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="9636f981-b0e9-4438-880f-65dd30a9bced"
+              LastKnownName="Abbonamento"
+              LastKnownLocation="casi d'uso - stadio.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="91ab9180-196e-46cc-9667-2f67194b8db4"
+                  name="Posto"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5caa3b93-48c2-4979-9aca-c8757c762f84"
+                  name="Abbonamento"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="557a2221-dc29-420a-a34e-42837b1f0f30"
+            isDerived="false"
+            sourceEndRoleName="Posto"
+            targetEndRoleName="Biglietto"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="480d9f18-2936-406d-b270-40519434899d"
+              LastKnownName="Biglietto"
+              LastKnownLocation="casi d'uso - stadio.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dcdf5b14-08ae-4da3-a47e-7ac860175483"
+                  name="Posto"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b9448f2d-36cd-4f0e-aca6-9babb619f664"
+                  name="Biglietto"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="676b52bb-5cb1-44ac-abe1-76e4e03ae8d9"
+            name="settore"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="783f4c43-99f5-47ea-9fbd-072826494de1"
+                LastKnownName="string"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="c9e2caa9-1863-407f-a925-330af52cdb39"
+            name="fila"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="42a557bc-5734-4ab9-9cdf-ec896c9ff57d"
+                LastKnownName="int"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="8a6f721a-f0cd-42eb-8055-68e16214f9f0"
+            name="posto"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="42a557bc-5734-4ab9-9cdf-ec896c9ff57d"
+                LastKnownName="int"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d635f5b1-0d44-46b1-b2e2-c96b8ddfe2c1"
+            name="libero/occupato"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="0be8dac7-55ea-4edd-8dcd-3c87fe7933e4"
+                LastKnownName="bool"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="3b1aea83-40c2-40b8-9591-0da4baf26e6a"
+            name="void CambiaStato"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="03932d49-178b-431a-966a-a1dae274d5c0"
+            name="void"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="24246fcd-089e-4c51-99c5-0722d7ceac97"
+        name="Spettatoreù" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="a2bcdcd7-cd77-4ef7-a71b-de0360eda022"
+        name="DateTime" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="783f4c43-99f5-47ea-9fbd-072826494de1"
+        name="string" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="0be8dac7-55ea-4edd-8dcd-3c87fe7933e4"
+        name="bool" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="1024b134-8813-41c7-82fe-724ac5bd9725"
+        name="IDAbb" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="d826b43e-0609-42b1-bc82-31ebc9b42952"
+        name="IDAbbonamento" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="42a557bc-5734-4ab9-9cdf-ec896c9ff57d"
+        name="int" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="480d9f18-2936-406d-b270-40519434899d"
+        name="Biglietto"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="5861e0d8-6ad6-43c3-b831-65a79b3e8302"
+            name="Costo"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a5f0c03a-b868-43d0-ae9a-85552517bd9d"
+                LastKnownName="double"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="db6f6be4-495c-4ed9-a9cd-e9e9f552a3b6"
+            name="data"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a2bcdcd7-cd77-4ef7-a71b-de0360eda022"
+                LastKnownName="DateTime"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="a5f0c03a-b868-43d0-ae9a-85552517bd9d"
+        name="double" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="8a50271b-936f-494f-9c24-f700badd2c48"
+        name="Sequence1"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <ownedCommentsInternal>
+          <comment
+            Id="ad8eccce-c935-4c1a-a5f6-f661ec4ccf35">
+            <body>Bigliettaio non è un'oggeto ma un "partecipante" 
+(Nei diagrammi di sequenza vengono chiamati in questo modo chi fa parte del sistema nella realtà ma non hanno implementazione virtuale) </body>
+          </comment>
+        </ownedCommentsInternal>
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="bb18877f-b81b-4086-a0b8-3ab38a6a926b"
+            name="BehaviorExecutionSpecification5">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="4006f838-c1d4-404f-9875-b63502566226"
+                LastKnownName="Bigliettaio"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="5bdf1717-23ca-408c-bd44-75558c3dc262"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="6620fd94-2cb5-476b-9806-235ad20d4f63"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="6105d23b-2194-496a-902d-c782f96b7bd0"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="073a5eb7-3c43-4f41-b922-f08d2d6d6065"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="dc90443f-c23d-45f7-abd8-498d6080c760"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="cce2d6bf-2489-47e9-ac88-0ccdb06efc7f"
+                LastKnownName="MessageOccurrenceSpecification29"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="f9def724-839c-4b5e-8322-c2cba290df6e"
+                LastKnownName="MessageOccurrenceSpecification32"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="d9258c9e-d4b1-4d4f-807a-ce4dd197584e"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="6620fd94-2cb5-476b-9806-235ad20d4f63"
+            name="ExecutionOccurrenceSpecification9">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="584168d8-0cce-47f6-ac85-dc0ff0815421"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="casi d'uso - stadio.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="4006f838-c1d4-404f-9875-b63502566226"
+                LastKnownName="Bigliettaio"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="e7b2f751-6d06-4a40-bb2b-4a0288042cd3"
+            name="MessageOccurrenceSpecification13">
+            <covered>
+              <lifelineMoniker
+                Id="42860caf-34d6-41eb-9cdc-0f4b348647b8"
+                LastKnownName="Cliente"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="6105d23b-2194-496a-902d-c782f96b7bd0"
+            name="MessageOccurrenceSpecification14">
+            <covered>
+              <lifelineMoniker
+                Id="4006f838-c1d4-404f-9875-b63502566226"
+                LastKnownName="Bigliettaio"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="df29650c-4ce7-4082-a85b-b068e277ee9c"
+            name="BehaviorExecutionSpecification6">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="a396b7f9-9a7f-43eb-bb2a-77c5f457c6af"
+                LastKnownName="Posto"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="c05a4451-bf52-40a7-bad5-2b5c36bdff6d"
+                LastKnownName="ExecutionOccurrenceSpecification12"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="b4c18cf9-8b9b-4072-9015-e0c536702d28"
+                LastKnownName="ExecutionOccurrenceSpecification11"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="027b6e6e-4989-4839-afcc-2ab4c8340ebc"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="dd492156-5080-41fe-ac8f-aee70334004d"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="b4c18cf9-8b9b-4072-9015-e0c536702d28"
+            name="ExecutionOccurrenceSpecification11">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="88ff840b-49de-4aed-b545-6b409a3e49c4"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="casi d'uso - stadio.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="a396b7f9-9a7f-43eb-bb2a-77c5f457c6af"
+                LastKnownName="Posto"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="073a5eb7-3c43-4f41-b922-f08d2d6d6065"
+            name="MessageOccurrenceSpecification17">
+            <covered>
+              <lifelineMoniker
+                Id="4006f838-c1d4-404f-9875-b63502566226"
+                LastKnownName="Bigliettaio"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="027b6e6e-4989-4839-afcc-2ab4c8340ebc"
+            name="MessageOccurrenceSpecification18">
+            <covered>
+              <lifelineMoniker
+                Id="a396b7f9-9a7f-43eb-bb2a-77c5f457c6af"
+                LastKnownName="Posto"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="dd492156-5080-41fe-ac8f-aee70334004d"
+            name="MessageOccurrenceSpecification19">
+            <covered>
+              <lifelineMoniker
+                Id="a396b7f9-9a7f-43eb-bb2a-77c5f457c6af"
+                LastKnownName="Posto"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="dc90443f-c23d-45f7-abd8-498d6080c760"
+            name="MessageOccurrenceSpecification20">
+            <covered>
+              <lifelineMoniker
+                Id="4006f838-c1d4-404f-9875-b63502566226"
+                LastKnownName="Bigliettaio"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="c05a4451-bf52-40a7-bad5-2b5c36bdff6d"
+            name="ExecutionOccurrenceSpecification12">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="e75928a8-fc72-477b-a4bf-634c398f4df0"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="casi d'uso - stadio.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="a396b7f9-9a7f-43eb-bb2a-77c5f457c6af"
+                LastKnownName="Posto"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="94b1ffe9-11d9-466d-957e-2b76b410f07d"
+            name="BehaviorExecutionSpecification9">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="182faeb8-db18-4b2a-a8b1-36939daa2c9a"
+                LastKnownName="Biglietto"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="30c4243d-134c-41a2-bbcf-baed6965859b"
+                LastKnownName="ExecutionOccurrenceSpecification18"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="df59693e-1c12-4fbe-b724-ab5c5a5334c4"
+                LastKnownName="ExecutionOccurrenceSpecification17"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="4e7a8bfa-3102-4aaa-8b18-462cd9f784cf"
+                LastKnownName="MessageOccurrenceSpecification30"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="9215224c-d84f-4818-8d4b-a2dc983a7d5e"
+                LastKnownName="MessageOccurrenceSpecification31"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="df59693e-1c12-4fbe-b724-ab5c5a5334c4"
+            name="ExecutionOccurrenceSpecification17">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="22c6610c-f8e3-4085-b36e-62604224efdf"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="casi d'uso - stadio.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="182faeb8-db18-4b2a-a8b1-36939daa2c9a"
+                LastKnownName="Biglietto"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="cce2d6bf-2489-47e9-ac88-0ccdb06efc7f"
+            name="MessageOccurrenceSpecification29">
+            <covered>
+              <lifelineMoniker
+                Id="4006f838-c1d4-404f-9875-b63502566226"
+                LastKnownName="Bigliettaio"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="4e7a8bfa-3102-4aaa-8b18-462cd9f784cf"
+            name="MessageOccurrenceSpecification30">
+            <covered>
+              <lifelineMoniker
+                Id="182faeb8-db18-4b2a-a8b1-36939daa2c9a"
+                LastKnownName="Biglietto"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="9215224c-d84f-4818-8d4b-a2dc983a7d5e"
+            name="MessageOccurrenceSpecification31">
+            <covered>
+              <lifelineMoniker
+                Id="182faeb8-db18-4b2a-a8b1-36939daa2c9a"
+                LastKnownName="Biglietto"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="f9def724-839c-4b5e-8322-c2cba290df6e"
+            name="MessageOccurrenceSpecification32">
+            <covered>
+              <lifelineMoniker
+                Id="4006f838-c1d4-404f-9875-b63502566226"
+                LastKnownName="Bigliettaio"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="30c4243d-134c-41a2-bbcf-baed6965859b"
+            name="ExecutionOccurrenceSpecification18">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="4fb1300c-3a25-460e-9d27-ba3668b5b2b7"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="casi d'uso - stadio.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="182faeb8-db18-4b2a-a8b1-36939daa2c9a"
+                LastKnownName="Biglietto"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="d9258c9e-d4b1-4d4f-807a-ce4dd197584e"
+            name="MessageOccurrenceSpecification15">
+            <covered>
+              <lifelineMoniker
+                Id="4006f838-c1d4-404f-9875-b63502566226"
+                LastKnownName="Bigliettaio"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="d9e40862-19d8-4a73-800c-f8603746fd03"
+            name="MessageOccurrenceSpecification16">
+            <covered>
+              <lifelineMoniker
+                Id="42860caf-34d6-41eb-9cdc-0f4b348647b8"
+                LastKnownName="Cliente"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="5bdf1717-23ca-408c-bd44-75558c3dc262"
+            name="ExecutionOccurrenceSpecification10">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="0a4680af-4adf-48f2-9d91-17ac8b26db18"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="casi d'uso - stadio.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="4006f838-c1d4-404f-9875-b63502566226"
+                LastKnownName="Bigliettaio"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="42860caf-34d6-41eb-9cdc-0f4b348647b8"
+            name="Cliente"
+            isActor="false"
+            lifelineDisplayName="Cliente">
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="e7b2f751-6d06-4a40-bb2b-4a0288042cd3"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="d9e40862-19d8-4a73-800c-f8603746fd03"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="4006f838-c1d4-404f-9875-b63502566226"
+            name="Bigliettaio"
+            isActor="false"
+            lifelineDisplayName="Bigliettaio">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="6620fd94-2cb5-476b-9806-235ad20d4f63"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="5bdf1717-23ca-408c-bd44-75558c3dc262"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="182faeb8-db18-4b2a-a8b1-36939daa2c9a"
+            name="Biglietto"
+            isActor="false"
+            lifelineDisplayName="Biglietto">
+            <represents>
+              <propertyMoniker
+                Id="f65142f1-5f9f-46d5-b254-99c8e8d85a07"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="df59693e-1c12-4fbe-b724-ab5c5a5334c4"
+                LastKnownName="ExecutionOccurrenceSpecification17"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="30c4243d-134c-41a2-bbcf-baed6965859b"
+                LastKnownName="ExecutionOccurrenceSpecification18"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="a396b7f9-9a7f-43eb-bb2a-77c5f457c6af"
+            name="Posto"
+            isActor="false"
+            lifelineDisplayName="Posto">
+            <represents>
+              <propertyMoniker
+                Id="6b1e89dc-8006-4931-b67e-48b5492bfaed"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="b4c18cf9-8b9b-4072-9015-e0c536702d28"
+                LastKnownName="ExecutionOccurrenceSpecification11"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="c05a4451-bf52-40a7-bad5-2b5c36bdff6d"
+                LastKnownName="ExecutionOccurrenceSpecification12"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="e1982204-25f9-4d7e-824e-c4513230de16"
+            name="Richiesta biglietto"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="e7b2f751-6d06-4a40-bb2b-4a0288042cd3"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="6105d23b-2194-496a-902d-c782f96b7bd0"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="2dc716d4-7195-4a18-8233-a70e0f69b488"
+            name="ControlloDisponibilità()"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="073a5eb7-3c43-4f41-b922-f08d2d6d6065"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="027b6e6e-4989-4839-afcc-2ab4c8340ebc"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="9fa1a610-f867-497d-95dd-fa98c438da41"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="dd492156-5080-41fe-ac8f-aee70334004d"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="dc90443f-c23d-45f7-abd8-498d6080c760"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="f1a015bd-7e28-4a7a-86d8-07de0e290bc6"
+            name="Costruttore(...)"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="cce2d6bf-2489-47e9-ac88-0ccdb06efc7f"
+                LastKnownName="MessageOccurrenceSpecification29"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="4e7a8bfa-3102-4aaa-8b18-462cd9f784cf"
+                LastKnownName="MessageOccurrenceSpecification30"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="fea8f10c-e854-4768-a1bf-47b1c1186af7"
+            name="StampaBiglietto()"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="9215224c-d84f-4818-8d4b-a2dc983a7d5e"
+                LastKnownName="MessageOccurrenceSpecification31"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="f9def724-839c-4b5e-8322-c2cba290df6e"
+                LastKnownName="MessageOccurrenceSpecification32"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="0cdc0c0c-b77f-4655-82bc-f5f68e00257e"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="d9258c9e-d4b1-4d4f-807a-ce4dd197584e"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="d9e40862-19d8-4a73-800c-f8603746fd03"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+        <ownedAttributesInternal>
+          <property
+            Id="f65142f1-5f9f-46d5-b254-99c8e8d85a07"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="480d9f18-2936-406d-b270-40519434899d"
+                LastKnownName="Biglietto"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="2f24840d-10e1-4608-8af2-84ade115ac89"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="9636f981-b0e9-4438-880f-65dd30a9bced"
+                LastKnownName="Abbonamento"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="6b1e89dc-8006-4931-b67e-48b5492bfaed"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="a898ecf4-6261-4832-a100-a9e46753324c"
+                LastKnownName="Posto"
+                LastKnownLocation="casi d'uso - stadio.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="584168d8-0cce-47f6-ac85-dc0ff0815421"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="0a4680af-4adf-48f2-9d91-17ac8b26db18"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="cdb29b73-bb4f-43ed-90b2-4707dea61f03"
+        name="Stampa  biglietto"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="e806bf85-5c1a-4e24-833d-e3b48d3de83d">
+            <useCaseMoniker
+              Id="12ecb642-33b4-4973-9422-add9338fe48d"
+              LastKnownName="Pagamento"
+              LastKnownLocation="casi d'uso - stadio.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="88ff840b-49de-4aed-b545-6b409a3e49c4"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="e75928a8-fc72-477b-a4bf-634c398f4df0"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="22c6610c-f8e3-4085-b36e-62604224efdf"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="4fb1300c-3a25-460e-9d27-ba3668b5b2b7"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

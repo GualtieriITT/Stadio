@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="d920b580-4197-46d7-a22b-0a52eca4ad56" name="UMLUseCaseDiagram1" linkedPackageId="c854f822-79d8-4991-92b7-5c17001a02ea" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="bd886ad3-4406-4349-ba50-968c013bad6c">
+      <elementDefinition Id="4abcac51-1b78-4e61-9a83-f98b6e8cf271" />
+      <body>Anche quando si vende un abbonamento si richiede la raccolta dati e il pagamento.</body>
+    </comment>
+    <comment Id="0f5f9ad8-9c6a-44f3-80ea-ca1ea72cc1de">
+      <elementDefinition Id="c245f240-9a29-4e90-add3-fc980bef9d16" />
+      <body>Tipologia di partita</body>
+    </comment>
+    <comment Id="e8b85ce2-cccf-426e-9d87-e04ebc20eab4">
+      <elementDefinition Id="a08bfe85-632b-48ea-8a8a-1d2d2aaa6d39" />
+      <body>Tipologia di posto</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="522433ec-df49-4563-8b19-da22c8c28ffd" name="Venditore" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2d446f90-b564-4ba6-a5f1-556a8dcdeb59" />
+        <targetEnds>
+          <association Id="81ff3a74-ebee-49c2-9388-2c4597f7b32c" isDerived="false" sourceEndRoleName="Venditore" targetEndRoleName="Vendere un abbonamento" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="cd06b261-f446-4529-8465-ccd80549d83d" LastKnownName="Vendere un abbonamento" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3d04e778-f225-4af3-804d-d042772f5fb7" name="Venditore" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5592fd7b-6293-4b90-b6e7-78fc388c6743" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="215e4e2a-d10c-4a72-9162-b5f0e0f09ece" name="Vendere un abbonamento" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="08ff9f86-ab2a-4ebb-9e9a-60b1cb9c0f59" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="bcbc76f8-e962-4e36-9e0e-b2e804fa3278" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="cd06b261-f446-4529-8465-ccd80549d83d" name="Vendere un abbonamento" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="12220941-421c-4620-bc2a-e4fd90367124" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c890a7fb-55bb-4acb-b610-62fd1b2a6027" name="Scegliere il tipo di partita" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="51379aa8-6a5e-40cd-ae0b-9489d08d03b2" />
+        <additions>
+          <include Id="4cb4e21b-0ef0-49e5-a395-728fbb78de05">
+            <useCaseMoniker Id="d4c5dcc5-1f20-4425-9831-cc68549176f7" LastKnownName="Vendi biglietto" />
+            <elementDefinition Id="e7376cd2-d681-4858-9a87-ae7ae8337523" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ffa074a1-4402-42cd-8287-e5874d25b519" name="Finale di Europa League" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a6a489ce-28a2-4d02-ba3c-0105afe38123" />
+        <generalsInternal>
+          <generalization Id="03d4d9b2-eb5f-43fc-94bf-5ed275b5238b" isSubstitutable="false">
+            <useCaseMoniker Id="c890a7fb-55bb-4acb-b610-62fd1b2a6027" LastKnownName="Scegliere il tipo di partita" />
+            <elementDefinition Id="6e3f98a6-a85c-4fab-85ac-0c6519b558f1" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0c152eb0-453c-4160-80d8-9a425ba2ed31" name="Normale di Europa League" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ec276239-4157-453a-b155-a7572753b4c6" />
+        <generalsInternal>
+          <generalization Id="711d61ce-877a-4e5f-b811-bdf24fdc5e89" isSubstitutable="false">
+            <useCaseMoniker Id="c890a7fb-55bb-4acb-b610-62fd1b2a6027" LastKnownName="Scegliere il tipo di partita" />
+            <elementDefinition Id="e1d6ba49-0ac4-4755-9379-6ae1990a03f2" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="18f410d7-f86d-4873-bbe5-02cacc77450a" name="Normale di Champions" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2ef32da7-e3b7-4b7f-9c13-9baa502e6a4d" />
+        <generalsInternal>
+          <generalization Id="b1757332-b25f-44ac-8071-9e1f4d48059f" isSubstitutable="false">
+            <useCaseMoniker Id="c890a7fb-55bb-4acb-b610-62fd1b2a6027" LastKnownName="Scegliere il tipo di partita" />
+            <elementDefinition Id="32a12e0b-a6a3-4c6a-a60b-7fa42844fe87" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="307d71ab-b1c4-4559-8da1-01266c625aa6" name="Finale di Champions" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7135ac2c-1a32-48a8-95c0-9ec9ff8c2d70" />
+        <generalsInternal>
+          <generalization Id="001d74b2-e24e-4735-840c-b6f23323f019" isSubstitutable="false">
+            <useCaseMoniker Id="c890a7fb-55bb-4acb-b610-62fd1b2a6027" LastKnownName="Scegliere il tipo di partita" />
+            <elementDefinition Id="7e61f689-4989-4cd4-8373-ffee6198215d" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9dd6a26d-aa36-4fe6-8bed-5ab3a20eac98" name="Campionato" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="50bca903-1182-4690-abe9-9a7536ec0c6a" />
+        <generalsInternal>
+          <generalization Id="1b26e2a1-be33-41d4-98de-2b547cbfe47c" isSubstitutable="false">
+            <useCaseMoniker Id="c890a7fb-55bb-4acb-b610-62fd1b2a6027" LastKnownName="Scegliere il tipo di partita" />
+            <elementDefinition Id="1b0c2d19-2120-449a-96ed-984bdc3c70aa" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5fac16bd-41ff-4159-af49-d4957e062bf3" name="Selezionare il posto" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="60a9d0ff-ee49-47df-89c2-f98a5f7bba21" />
+        <additions>
+          <include Id="b3837cea-91f9-47b9-a336-25e5699cca52">
+            <useCaseMoniker Id="cd06b261-f446-4529-8465-ccd80549d83d" LastKnownName="Vendere un abbonamento" />
+            <elementDefinition Id="0e2832bb-8709-41aa-95c5-3c5351ee3889" />
+          </include>
+          <include Id="b500a016-0481-476d-888f-6bca3573b0f0">
+            <useCaseMoniker Id="c890a7fb-55bb-4acb-b610-62fd1b2a6027" LastKnownName="Scegliere il tipo di partita" />
+            <elementDefinition Id="c6a8b162-7294-4fc0-a457-2a3acf006e52" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7ed25b12-6987-4c4e-b48a-c946cbac8025" name="Curva" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="57af90c9-85d6-4bb6-9607-2243952a348e" />
+        <generalsInternal>
+          <generalization Id="08932101-e05d-4b3f-9cef-0f864e3b9dc4" isSubstitutable="false">
+            <useCaseMoniker Id="5fac16bd-41ff-4159-af49-d4957e062bf3" LastKnownName="Selezionare il posto" />
+            <elementDefinition Id="e9c4ff15-9e16-468e-975d-9202f517aae9" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="62558c4a-a8e2-4dc7-beda-bee62975ac21" name="Tribuna" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8e61146e-2157-4108-8eae-43c42d716516" />
+        <generalsInternal>
+          <generalization Id="00403121-c99e-4272-adb4-b66700f5527a" isSubstitutable="false">
+            <useCaseMoniker Id="5fac16bd-41ff-4159-af49-d4957e062bf3" LastKnownName="Selezionare il posto" />
+            <elementDefinition Id="c694bfd6-ae05-4676-8c34-dc357393c0b7" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9c5fe9dc-6e92-4035-ae24-93a5f997f8f1" name="Distinti" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0ed36696-cb8d-4157-99ae-ec1a6bc2cb17" />
+        <generalsInternal>
+          <generalization Id="64dffdb9-e690-43cc-8e99-5fa4b305305a" isSubstitutable="false">
+            <useCaseMoniker Id="5fac16bd-41ff-4159-af49-d4957e062bf3" LastKnownName="Selezionare il posto" />
+            <elementDefinition Id="ce7982fe-8282-4659-b5fe-48f030d503fe" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="183e0809-b100-4965-a485-8327eda618a9" name="Vip" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0d74afdc-8c38-4636-af91-1ceb9a4c0108" />
+        <generalsInternal>
+          <generalization Id="ad8ac00b-e42f-4079-a5a1-508c350fdf5e" isSubstitutable="false">
+            <useCaseMoniker Id="62558c4a-a8e2-4dc7-beda-bee62975ac21" LastKnownName="Tribuna" />
+            <elementDefinition Id="7f44f6bb-8993-45f1-8a8d-66020a7cfdb4" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6fd4b7ed-c604-488e-addd-5fc743d02c35" name="Normale" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2b34a463-a9f4-48d0-9fca-b9854b39cf29" />
+        <generalsInternal>
+          <generalization Id="a85e99db-4a29-41f8-90c1-18cee6c31ade" isSubstitutable="false">
+            <useCaseMoniker Id="62558c4a-a8e2-4dc7-beda-bee62975ac21" LastKnownName="Tribuna" />
+            <elementDefinition Id="40d54b8e-0e9e-45f2-85b7-6d107e436a58" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fa0a56e9-3349-4fab-bee5-0b4e183d889e" name="Ospiti" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="501b6503-9265-4314-a653-ed0e7b6e64bd" />
+        <generalsInternal>
+          <generalization Id="6fe843cb-8d7d-4384-b215-18c411633385" isSubstitutable="false">
+            <useCaseMoniker Id="7ed25b12-6987-4c4e-b48a-c946cbac8025" LastKnownName="Curva" />
+            <elementDefinition Id="6f6702a5-543f-4a6a-bc1e-068fac19f157" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="39b6abd1-6264-4966-ae0f-a29ed6c5b813" name="Locali" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="aa9300cc-21c4-4f06-9725-abdabd71d60b" />
+        <generalsInternal>
+          <generalization Id="d9307773-250a-4dd1-b8f6-f318ef03224b" isSubstitutable="false">
+            <useCaseMoniker Id="7ed25b12-6987-4c4e-b48a-c946cbac8025" LastKnownName="Curva" />
+            <elementDefinition Id="a944284f-e54e-4657-bf37-1d9641219bd6" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9721ebbf-dbc0-4cbb-b16f-f80df03a6693" name="Centrale superiore" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5c053339-5360-47a5-aec6-aa0b47b1f488" />
+        <generalsInternal>
+          <generalization Id="7e030888-172b-456e-a3fc-bb504b719592" isSubstitutable="false">
+            <useCaseMoniker Id="9c5fe9dc-6e92-4035-ae24-93a5f997f8f1" LastKnownName="Distinti" />
+            <elementDefinition Id="b1c859a9-4ba0-4a0a-b0df-ea891a43d440" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="3b8b74fb-c7d4-4eda-a0be-a7c4e49a522c" name="Laterale inferiore" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4484d7bf-a26f-4f61-a862-1340c7fc5bb4" />
+        <generalsInternal>
+          <generalization Id="7f3cd0c0-4810-4bfa-83e2-6c97d29c589c" isSubstitutable="false">
+            <useCaseMoniker Id="9c5fe9dc-6e92-4035-ae24-93a5f997f8f1" LastKnownName="Distinti" />
+            <elementDefinition Id="379f2600-d892-4fe4-bd49-bfaac8e7cc3f" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b8c3fee9-caaa-4323-a501-ebc884cd084a" name="Laterale superiore" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5f57f267-5c5b-4232-baaa-08538e6bcfd3" />
+        <generalsInternal>
+          <generalization Id="bfac385a-57a7-4b82-8d89-10ca4bd1409f" isSubstitutable="false">
+            <useCaseMoniker Id="9c5fe9dc-6e92-4035-ae24-93a5f997f8f1" LastKnownName="Distinti" />
+            <elementDefinition Id="25bd388d-32d7-477a-a9c7-6e483afaafaf" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="27f762a2-0f52-4126-aeb9-fca596038a12" name="Centrale inferiore" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="72761cf2-b067-4d94-b054-b535d7a5064c" />
+        <generalsInternal>
+          <generalization Id="1348f043-e056-465c-8032-97b53728276d" isSubstitutable="false">
+            <useCaseMoniker Id="9c5fe9dc-6e92-4035-ae24-93a5f997f8f1" LastKnownName="Distinti" />
+            <elementDefinition Id="58e44dc1-ed95-4fe5-ac70-b1d78b07440d" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d4c5dcc5-1f20-4425-9831-cc68549176f7" name="Vendi biglietto" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f1362f6f-1c17-4860-bd4c-7ab80f609b95" />
+        <targetEnds>
+          <association Id="587c8725-e45e-4b22-8c20-3df0ba8cfdea" isDerived="false" sourceEndRoleName="Vendi biglietto" targetEndRoleName="Venditore" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="522433ec-df49-4563-8b19-da22c8c28ffd" LastKnownName="Venditore" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fe4cc758-58fd-4b8a-9fc9-12ce57392260" name="Vendi biglietto" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="36e6d150-df7a-4c10-b4dc-3348c79ff0a3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8cf6515b-0d9a-4831-ac2d-4c5ec0c968da" name="Venditore" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3880c7df-0d4f-4fbb-a38f-2c5907a5b8e5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5f7e965e-fadc-4a3b-9ca7-dba459515a21" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b6b34861-36c6-4efd-bcf7-41ca24bada50" name="Raccolta dati" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3d7b4031-7de7-4d3e-bc87-e9aeec2e916c" />
+        <additions>
+          <include Id="d063d53d-283b-46fe-83c1-264348468029">
+            <useCaseMoniker Id="c890a7fb-55bb-4acb-b610-62fd1b2a6027" LastKnownName="Scegliere il tipo di partita" />
+            <elementDefinition Id="fefa575d-b1e2-4c83-8636-6e7a9c02bb3c" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="594ad3be-ac09-4bc4-83a1-ab770c1d7e2b" name="Pagamento" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="12ecb642-33b4-4973-9422-add9338fe48d" />
+        <additions>
+          <include Id="ddfd0f8e-a9cb-479b-9bbf-10acd7dc1635">
+            <useCaseMoniker Id="c890a7fb-55bb-4acb-b610-62fd1b2a6027" LastKnownName="Scegliere il tipo di partita" />
+            <elementDefinition Id="6a928db0-6c75-4a26-a54a-b1a61e25f4bf" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="af0992a3-b1bb-48a7-b286-bc4c1f371e45" name="Stampa  biglietto" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cdb29b73-bb4f-43ed-90b2-4707dea61f03" />
+        <additions>
+          <include Id="175036f9-f066-4916-8a4b-507612c1ded5">
+            <useCaseMoniker Id="594ad3be-ac09-4bc4-83a1-ab770c1d7e2b" LastKnownName="Pagamento" />
+            <elementDefinition Id="e806bf85-5c1a-4e24-833d-e3b48d3de83d" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="c854f822-79d8-4991-92b7-5c17001a02ea" name="casi d'uso - stadio">
+    <elementDefinition Id="981a02cb-35e9-4a73-ad26-cd690f406e53" />
+    <profileInstances>
+      <packageHasProfileInstances Id="288e9731-c14b-4f15-9045-7324993eeeed">
+        <profileInstance Id="85857a14-f261-4175-9f9a-55ef16769204" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="45f1ca6d-c81b-41f0-acff-92b9e39aee17">
+        <profileInstance Id="cdd740cc-a003-4987-99f2-b41107bf0bb3" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>
